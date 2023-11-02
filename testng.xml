@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Grafana k6 HTTP REST APIs" parallel="classes">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
+    </listeners>
+    <test name="RestAssured Api test">
+        <classes>
+            <class name="API.TestApi"></class>
+
+        </classes>
+    </test> <!-- Test -->
+    <parameter name="output-directory" value="Rest API test output"></parameter>
+</suite> <!-- Suite -->
