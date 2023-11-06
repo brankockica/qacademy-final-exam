@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Testing Grafana k6 HTTP REST APIs" parallel="classes">
+<suite name="Testing qacademy app" parallel="classes">
     <listeners>
         <listener class-name="org.testng.reporters.EmailableReporter"></listener>
     </listeners>
-    <test name="RestAssured Api test">
+    <test name="Ui automation">
         <classes>
-            <class name="API.TestApi"></class>
+            <class name="Ui_Automation.Tests.LogoutTests"></class>
+            <class name="Ui_Automation.Tests.LoginTests"></class>
+            <class name="Ui_Automation.Tests.RegisterTests"></class>
+            <class name="Ui_Automation.Tests.TransactionTests"></class>
+            <class name="Ui_Automation.Tests.MyAccountsTests"></class>
 
         </classes>
     </test> <!-- Test -->
-    <parameter name="output-directory" value="Rest API test output"></parameter>
+    <parameter name="output-directory" value="Ui Automation Tests"></parameter>
 </suite> <!-- Suite -->

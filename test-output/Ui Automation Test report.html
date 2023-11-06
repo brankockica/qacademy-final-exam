@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Ui automation</a></td><td class="numi">12</td><td class="numi">12</td><td class="numi">0</td><td class="numi_attn">9</td><td class="numi">80.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Ui automation &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">Ui_Automation.Tests.TransactionTests</td><td><a href="#m1"><b>casePayingWithNegativAmount</b>  ("Verifying paying process using negative amount in payment process")</a></td><td class="numi">1</td><td>1699288826080</td><td class="numi">906</td></tr><tr class="failedodd"><td><a href="#m2"><b>casePayingWithDecimalAmount</b>  ("Verifying paying process using valid data and decimal number amount")</a></td><td class="numi">1</td><td>1699288824603</td><td class="numi">946</td></tr>
+<tr class="failedeven"><td rowspan="2">Ui_Automation.Tests.LoginTests</td><td><a href="#m3"><b>verifyRememberMeFunction</b>  ("Verify that remember me function is working properly")</a></td><td class="numi">1</td><td>1699288839891</td><td class="numi">15285</td></tr><tr class="failedeven"><td><a href="#m4"><b>verifyLoginWithEmptyFields</b>  ("Verify login process with empty fields")</a></td><td class="numi">1</td><td>1699288822175</td><td class="numi">15293</td></tr>
+<tr class="failedodd"><td>Ui_Automation.Tests.RegisterTests</td><td><a href="#m5"><b>caseVerifyHaveAccountLink</b>  ("Verify if 'Have Account' link, works properly")</a></td><td class="numi">1</td><td>1699288822285</td><td class="numi">143</td></tr>
+<tr class="failedeven"><td>Ui_Automation.Tests.TransactionTests</td><td><a href="#m6"><b>casePaymentProcess</b>  ("Verifying payment process using valid data")</a></td><td class="numi">1</td><td>1699288820115</td><td class="numi">2381</td></tr>
+<tr class="failedodd"><td>Ui_Automation.Tests.LogoutTests</td><td><a href="#m7"><b>logoutUser</b>  ("Verifying if logout process is without error")</a></td><td class="numi">1</td><td>1699288821716</td><td class="numi">2019</td></tr>
+<tr class="failedeven"><td>Ui_Automation.Tests.TransactionTests</td><td><a href="#m8"><b>casePayProcessWithZeroBalance</b>  ("Verifying paying process when Account balance is zero")</a></td><td class="numi">1</td><td>1699288827599</td><td class="numi">1625</td></tr>
+<tr class="failedodd"><td>Ui_Automation.Tests.LoginTests</td><td><a href="#m9"><b>verifySignUpHyperLink</b>  ("Verify if "Don't have an account? Sign Up" link is working properly")</a></td><td class="numi">1</td><td>1699288855177</td><td class="numi">15285</td></tr>
+<tr><th colspan="5">Ui automation &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">Ui_Automation.Tests.MyAccountsTests</td><td><a href="#m10"><b>caseVerifySavingProcess</b>  ("Verifying My Account saving process using valid data")</a></td><td class="numi">1</td><td>1699288831399</td><td class="numi">1175</td></tr><tr class="passedodd"><td><a href="#m11"><b>caseVerifyPhoneNumberEnforce</b>  ("Verifying if Phone number field enforces the minimum number of characters")</a></td><td class="numi">1</td><td>1699288829344</td><td class="numi">212</td></tr><tr class="passedodd"><td><a href="#m12"><b>caseVerifyAutoImport</b>  ("Verifying if MyAccount imports data from registration into fields")</a></td><td class="numi">1</td><td>1699288823967</td><td class="numi">792</td></tr>
+<tr class="passedeven"><td>Ui_Automation.Tests.LoginTests</td><td><a href="#m13"><b>verifyLoginProcess</b>  ("Verify login process with valid data")</a></td><td class="numi">1</td><td>1699288820691</td><td class="numi">1483</td></tr>
+<tr class="passedodd"><td>Ui_Automation.Tests.RegisterTests</td><td><a href="#m14"><b>caseRegisterWithValidData</b>  ("Verify registering with valid data")</a></td><td class="numi">1</td><td>1699288821048</td><td class="numi">998</td></tr>
+<tr class="passedeven"><td>Ui_Automation.Tests.LoginTests</td><td><a href="#m15"><b>validatePresenceOfUiElements</b>  ("Verify presence of UI elements")</a></td><td class="numi">1</td><td>1699288800981</td><td class="numi">19709</td></tr>
+<tr class="passedodd"><td>Ui_Automation.Tests.MyAccountsTests</td><td><a href="#m16"><b>caseVerifyPhoneNumberAplhaChar</b>  ("Verifying if Phone number field declines alphabet characters")</a></td><td class="numi">1</td><td>1699288826745</td><td class="numi">327</td></tr>
+<tr class="passedeven"><td>Ui_Automation.Tests.TransactionTests</td><td><a href="#m17"><b>caseReuestProcess</b>  ("Verifying request process using valid data")</a></td><td class="numi">1</td><td>1699288823277</td><td class="numi">907</td></tr>
+<tr class="passedodd"><td rowspan="2">Ui_Automation.Tests.RegisterTests</td><td><a href="#m18"><b>caseRegisterWithNonLatinKey</b>  ("Verify registering with non-Latin keyboar")</a></td><td class="numi">1</td><td>1699288800981</td><td class="numi">20066</td></tr><tr class="passedodd"><td><a href="#m19"><b>caseVerifyConfirmPasswordEnforce</b>  ("Verify if confirm password field enforces validation")</a></td><td class="numi">1</td><td>1699288822046</td><td class="numi">238</td></tr>
+<tr class="passedeven"><td>Ui_Automation.Tests.LoginTests</td><td><a href="#m20"><b>verifyQaLogoLink</b>  ("Verify QA logo link working properly")</a></td><td class="numi">1</td><td>1699288837469</td><td class="numi">2421</td></tr>
+<tr class="passedodd"><td>Ui_Automation.Tests.RegisterTests</td><td><a href="#m21"><b>caseVerifyPasswordEnforce</b>  ("Verify if password field enforces minimum of 4 characters")</a></td><td class="numi">1</td><td>1699288822433</td><td class="numi">177</td></tr>
+</table>
+<h1>Ui automation</h1>
+<h2 id="m1">Ui_Automation.Tests.LogoutTests:logoutUser</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: Request failed with status code 500, message appears expected [false] but found [true]
+	at Ui_Automation.Pages.LoginPage.assertErorElement(LoginPage.java:51)
+	at Ui_Automation.Tests.LogoutTests.logoutUser(LogoutTests.java:29)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Ui_Automation.Tests.TransactionTests:casePayingWithNegativAmount</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: The negative amount was successfully payed expected [false] but found [true]
+	at Ui_Automation.Pages.TransactionPage.makeANegativPayment(TransactionPage.java:94)
+	at Ui_Automation.Tests.TransactionTests.casePayingWithNegativAmount(TransactionTests.java:67)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Ui_Automation.Tests.TransactionTests:casePayProcessWithZeroBalance</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: expected [0] but found [0.0]
+	at Ui_Automation.Tests.TransactionTests.casePayProcessWithZeroBalance(TransactionTests.java:76)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Ui_Automation.Tests.LoginTests:verifyLoginWithEmptyFields</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test=&apos;signin-submit&apos;]&quot;}
+  (Session info: chrome=119.0.6045.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [379c37e0d7f8bd494e59d3cdd5895085, findElement {using=css selector, value=[data-test=&apos;signin-submit&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Home\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59495/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 379c37e0d7f8bd494e59d3cdd5895085
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at Ui_Automation.Pages.LoginPage.clickLoginButton(LoginPage.java:60)
+	at Ui_Automation.Pages.LoginPage.verifyLoginEmptyFields(LoginPage.java:96)
+	at Ui_Automation.Tests.LoginTests.verifyLoginWithEmptyFields(LoginTests.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Ui_Automation.Tests.TransactionTests:casePayingWithDecimalAmount</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: Decimal number was not registered expected [$1.50] but found [$1.00]
+	at Ui_Automation.Tests.TransactionTests.casePayingWithDecimalAmount(TransactionTests.java:61)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Ui_Automation.Tests.LoginTests:verifySignUpHyperLink</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test=&apos;signup&apos;]&quot;}
+  (Session info: chrome=119.0.6045.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [379c37e0d7f8bd494e59d3cdd5895085, findElement {using=css selector, value=[data-test=&apos;signup&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Home\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59495/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 379c37e0d7f8bd494e59d3cdd5895085
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at Ui_Automation.Pages.LoginPage.clickSignUpLink(LoginPage.java:66)
+	at Ui_Automation.Pages.LoginPage.verifySignUpLink(LoginPage.java:85)
+	at Ui_Automation.Tests.LoginTests.verifySignUpHyperLink(LoginTests.java:36)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Ui_Automation.Tests.RegisterTests:caseVerifyHaveAccountLink</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: The link is not redirecting properly expected [https://app.qacademy.rs/signin] but found [https://app.qacademy.rs/signup]
+	at Ui_Automation.Pages.RegisterPage.verifyHaveAnAccountLink(RegisterPage.java:97)
+	at Ui_Automation.Tests.RegisterTests.caseVerifyHaveAccountLink(RegisterTests.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Ui_Automation.Tests.TransactionTests:casePaymentProcess</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: did not expect [700.0] but found [700.0]
+	at Ui_Automation.Tests.TransactionTests.casePaymentProcess(TransactionTests.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">Ui_Automation.Tests.LoginTests:verifyRememberMeFunction</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
+  (Session info: chrome=119.0.6045.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [379c37e0d7f8bd494e59d3cdd5895085, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Home\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59495/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 379c37e0d7f8bd494e59d3cdd5895085
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at Ui_Automation.Pages.LoginPage.enterUsername(LoginPage.java:54)
+	at Ui_Automation.Pages.LoginPage.loginUser(LoginPage.java:73)
+	at Ui_Automation.Tests.LoginTests.verifyRememberMeFunction(LoginTests.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 13 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">Ui_Automation.Tests.LoginTests:verifyQaLogoLink</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">Ui_Automation.Tests.LoginTests:verifyLoginProcess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">Ui_Automation.Tests.RegisterTests:caseRegisterWithValidData</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">Ui_Automation.Tests.MyAccountsTests:caseVerifySavingProcess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">Ui_Automation.Tests.LoginTests:validatePresenceOfUiElements</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">Ui_Automation.Tests.RegisterTests:caseVerifyPasswordEnforce</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">Ui_Automation.Tests.MyAccountsTests:caseVerifyPhoneNumberAplhaChar</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">Ui_Automation.Tests.TransactionTests:caseReuestProcess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">Ui_Automation.Tests.MyAccountsTests:caseVerifyPhoneNumberEnforce</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">Ui_Automation.Tests.RegisterTests:caseRegisterWithNonLatinKey</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">Ui_Automation.Tests.RegisterTests:caseVerifyConfirmPasswordEnforce</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">Ui_Automation.Tests.MyAccountsTests:caseVerifyAutoImport</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
